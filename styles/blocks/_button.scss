@@ -1,0 +1,17 @@
+.button {
+	@include flex-center(true);
+	@include hover {
+		opacity: 0.7;
+	}
+
+	padding-inline: 50px;
+	padding-block: 20px;
+	color: #ffffff;
+	background-color: var(--color-green);
+	border: 1px solid var(--color-green);
+	
+	&--small {
+		padding-inline: 13px;
+		height: 51px;
+	}
+}

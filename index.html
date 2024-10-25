@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alivio</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="shortcut icon" href="images/Favicon.svg" type="image/svg">
+</head>
+<body>
+	<header class="header">
+		<div class="header__inner container">
+			<a href="" class="header__logo logo">
+				<img src="./images/Logo.svg" height="23" width="80" alt="Alivio" loading="lazy" class="logo__image">
+			</a>
+			<nav class="header__menu hidden-mobile">
+				<ul class="header__menu-list">
+					<li class="header__menu-item">
+						<a href="/" class="header__menu-link">Why Alivio</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="/" class="header__menu-link">Solutions</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="/" class="header__menu-link">Community</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="/" class="header__menu-link">Pricing</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__actions hidden-mobile">
+				<a href="/" class="header__actions-link">Sign in</a>
+				<button class="header__button button button--small" type="button">Start Trial</button>
+			</div>
+			<button class="header__burger-button burger-button visible-mobile" onclick="mobileOverlay.showModal()" type="button">
+			</button>
+		</div>
+	</header>
+
+	<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+		<form action="" class="mobile-overlay__close-button-wrapper" method="dialog">
+			<button class="mobile-overlay__close-button cross-button" type="submit">
+			</button>
+		</form>
+		<div class="mobile-overlay__body">
+			<ul class="mobile-overlay-list">
+				<li class="mobile-overlay__item">
+					<a href="/" class="mobile-overlay__link">Why Alivio</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="/" class="mobile-overlay__link">Solutions</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="/" class="mobile-overlay__link">Community</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="/" class="mobile-overlay__link">Pricing</a>
+				</li>
+			</ul>
+		</div>
+	</dialog>
+</body>
+</html>
