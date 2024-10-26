@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 	<link rel="stylesheet" href="./css/styles.css">
 	<link rel="shortcut icon" href="images/Favicon.svg" type="image/svg">
 </head>
+
 <body>
 	<header class="header">
 		<div class="header__inner container">
@@ -33,10 +35,29 @@
 				<a href="/" class="header__actions-link">Sign in</a>
 				<button class="header__button button button--small" type="button">Start Trial</button>
 			</div>
-			<button class="header__burger-button burger-button visible-mobile" onclick="mobileOverlay.showModal()" type="button">
+			<button class="header__burger-button burger-button visible-mobile" onclick="mobileOverlay.showModal()"
+				type="button">
 			</button>
 		</div>
 	</header>
+
+	<main class="content">
+		<section class=" section section--background">
+			<div class="section__body container">
+				<div class="moto">
+					<h1 class="moto__title">Be aware,<br>
+						Manage well.</h1>
+					<div class="moto__description">
+						<p>
+							Everyone experiences stress in different ways.
+							Let Alivio guide you, in a personalized journal experience, to overcome your stress.
+						</p>
+					</div>
+					<div class="moto__button button">Find Your Way</div>
+				</div>
+			</div>
+		</section>
+	</main>
 
 	<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
 		<form action="" class="mobile-overlay__close-button-wrapper" method="dialog">
@@ -61,4 +82,5 @@
 		</div>
 	</dialog>
 </body>
+
 </html>

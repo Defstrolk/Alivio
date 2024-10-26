@@ -344,7 +344,8 @@ svg * {
   padding-block: 20px;
   color: #ffffff;
   background-color: var(--color-green);
-  border: 1px solid var(--color-green); }
+  border: 1px solid var(--color-green);
+  height: 65px; }
   @media (hover: hover) {
     .button:hover {
       opacity: 0.7; } }
@@ -354,5 +355,33 @@ svg * {
   .button--small {
     padding-inline: 13px;
     height: 51px; }
+
+.section--background {
+  background-image: url("../../images/banner.png");
+  background-size: cover;
+  height: 895px; }
+  @media (max-width: 480px) {
+    .section--background {
+      height: 500px; } }
+
+.moto__title {
+  padding-top: 175px;
+  font-size: 65px;
+  font-weight: 700;
+  color: var(--color-green);
+  max-width: 390px; }
+  @media (max-width: 480px) {
+    .moto__title {
+      padding-top: 50px;
+      font-size: 50px; } }
+
+.moto__description {
+  padding-top: 22px;
+  padding-bottom: 44px;
+  max-width: 420px; }
+  @media (max-width: 480px) {
+    .moto__description {
+      text-align: justify;
+      font-size: 18px; } }
 
 /*# sourceMappingURL=styles.css.map */

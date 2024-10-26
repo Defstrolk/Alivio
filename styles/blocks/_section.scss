@@ -1,0 +1,11 @@
+.section{
+	&--background{
+		@include mobile-s{
+			height: 500px;
+		}
+
+		background-image: url("../../images/banner.png");
+		background-size: cover;
+		height: 895px;
+	}
+}
