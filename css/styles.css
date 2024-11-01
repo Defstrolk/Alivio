@@ -665,7 +665,8 @@ svg * {
   @media (max-width: 767px) {
     .diary {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      height: 1100px; } }
   .diary__main {
     display: flex;
     flex-direction: column;
@@ -676,7 +677,7 @@ svg * {
       .diary__main {
         order: -1;
         align-items: center;
-        margin-top: 50px; } }
+        margin-top: 0; } }
   .diary__subtitle {
     margin-bottom: 10px;
     font-size: 25px;
@@ -706,6 +707,11 @@ svg * {
       .diary__image-inner {
         margin-block: 30px;
         width: 390px;
+        height: 500px;
+        margin-inline: auto; } }
+    @media (max-width: 480px) {
+      .diary__image-inner {
+        width: 300px;
         height: 500px; } }
   .diary__image {
     margin: 0;
@@ -714,6 +720,32 @@ svg * {
     position: absolute;
     top: 70%;
     left: -10%;
-    object-fit: cover; }
+    object-fit: cover;
+    height: 250px; }
+
+.footer {
+  padding-top: 95px;
+  height: 624px;
+  background-color: var(--color-green-alt); }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px; }
+    @media (max-width: 480px) {
+      .footer__list {
+        text-align: center;
+        justify-content: center;
+        align-items: center; } }
+  .footer__item:first-child {
+    margin-bottom: 7px; }
+  .footer__link {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    color: white; }
+    .footer__link--company {
+      font-size: 40px;
+      font-weight: 900;
+      line-height: 48px; }
 
 /*# sourceMappingURL=styles.css.map */

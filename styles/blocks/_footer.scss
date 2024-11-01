@@ -1,0 +1,36 @@
+.footer {
+	padding-top: 95px;
+	height: 624px;
+	background-color: var(--color-green-alt);
+
+	&__list {
+		@include mobile-s{
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+		}
+
+		display: flex;
+		flex-direction: column;
+		row-gap: 60px;
+	}
+
+	&__item {
+		&:first-child {
+			margin-bottom: 7px;
+		}
+	}
+
+	&__link {
+		font-size: 25px;
+		font-weight: 600;
+		line-height: 30px;
+		color: white;
+
+		&--company {
+			font-size: 40px;
+			font-weight: 900;
+			line-height: 48px;
+		}
+	}
+}
