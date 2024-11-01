@@ -1,0 +1,113 @@
+.product {
+	@include mobile{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	display: flex;
+	column-gap: 16px;
+
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+
+	&__title {
+		@include desktop{
+			padding-top: 220px;
+		}
+		@include tablet{
+			font-size: 32px;
+		}
+		@include mobile{
+			text-align: center;
+			padding-top: 40px;
+			font-size: 32px;
+		}
+
+		padding-top: 269px;
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 157%;
+		color: white;
+	}
+
+	&__description {
+		@include tablet{
+			font-size: 20px;
+		}
+		@include mobile{
+			font-size: 20px;
+			padding: 19px 0 20px 0;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		font-size: 25px;
+		font-weight: 600;
+		line-height: 157%;
+		color: white;
+		padding: 19px 0 80px 0;
+	}
+
+	&__button{
+		@include mobile{
+			margin: 0 auto;
+		}
+	}
+
+	&__video {
+		@include desktop{
+			width: 600px;
+		}
+		@include tablet{
+			width: 400px;
+		}
+		@include mobile{
+			width: 400px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+
+		@include mobile-s{
+			width: 300px;
+		}
+
+		anchor-name: --video;
+		padding-top: 220px;
+		padding-bottom: 227px;
+		position: relative;
+		display: block;
+		
+
+	}
+
+	&__video-player{
+		@include square(72px);
+		
+		display: block;
+		border: 1px solid white;
+		position: absolute;
+		border-radius: 50%;
+		position-anchor: --video;
+		top: anchor(50%);
+		left: anchor(50%);
+		transform: translate(-50%,-50%);
+
+		&::before{
+			content: '';
+			position: absolute;
+			position-anchor: --video;
+			width: 24px;
+			height: 30px;
+			transform: translate(100%, 70%);
+			top: anchor(50%);
+			left: anchor(50%);
+			background: url('../images/vector.svg') center/contain no-repeat;
+		}
+	}
+}

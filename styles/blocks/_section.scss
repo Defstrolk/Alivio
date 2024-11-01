@@ -4,10 +4,14 @@
 			height: 500px;
 		}
 
-		background-image: url("../../images/banner.png");
+		background-image: url("../images/banner.png");
 		background-size: cover;
 		background-position: center;
 		height: 895px;
 		margin-bottom: 78px;
+	}
+
+	&--backgroundGreen{
+		background-color: var(--color-green-alt);
 	}
 }
