@@ -554,13 +554,20 @@ svg * {
 
 .product {
   display: flex;
-  column-gap: 16px; }
+  column-gap: 16px;
+  height: 922px; }
   @media (max-width: 767px) {
     .product {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; } }
+  @media (max-width: 767px) {
+    .product {
+      height: 600px; } }
+  @media (max-width: 1023px) {
+    .product {
+      height: 600px; } }
   .product__body {
     display: flex;
     flex-direction: column;
@@ -576,6 +583,7 @@ svg * {
         padding-top: 220px; } }
     @media (max-width: 1023px) {
       .product__title {
+        padding-top: 160px;
         font-size: 32px; } }
     @media (max-width: 767px) {
       .product__title {
@@ -602,21 +610,24 @@ svg * {
       margin: 0 auto; } }
   .product__video {
     anchor-name: --video;
-    padding-top: 220px;
-    padding-bottom: 227px;
+    margin-top: 220px;
+    margin-bottom: 227px;
     position: relative;
     display: block; }
     @media (max-width: 1280px) {
       .product__video {
-        width: 600px; } }
+        width: 600px;
+        height: 250px; } }
     @media (max-width: 1023px) {
       .product__video {
+        margin-top: 150px;
+        margin-bottom: 150px;
         width: 400px; } }
     @media (max-width: 767px) {
       .product__video {
         width: 400px;
-        padding-top: 50px;
-        padding-bottom: 50px; } }
+        margin-top: 50px;
+        margin-bottom: 50px; } }
     @media (max-width: 480px) {
       .product__video {
         width: 300px; } }
@@ -641,5 +652,68 @@ svg * {
       top: anchor(50%);
       left: anchor(50%);
       background: url("../images/vector.svg") center/contain no-repeat; }
+
+.diary {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 931px;
+  column-gap: 87px; }
+  @media (max-width: 1023px) {
+    .diary {
+      column-gap: 30px; } }
+  @media (max-width: 767px) {
+    .diary {
+      display: flex;
+      flex-direction: column; } }
+  .diary__main {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: start;
+    margin-top: 115px; }
+    @media (max-width: 767px) {
+      .diary__main {
+        order: -1;
+        align-items: center;
+        margin-top: 50px; } }
+  .diary__subtitle {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 157%; }
+  .diary__title {
+    margin-bottom: 20px;
+    color: var(--color-green);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 157%; }
+    @media (max-width: 767px) {
+      .diary__title {
+        font-size: 30px; } }
+  .diary__description {
+    margin-bottom: 40px;
+    max-width: 530px; }
+  .diary__image-inner {
+    display: flex;
+    justify-content: center;
+    margin-top: 115px;
+    width: 638px;
+    height: 573px;
+    background-color: var(--color-green-light);
+    position: relative; }
+    @media (max-width: 767px) {
+      .diary__image-inner {
+        margin-block: 30px;
+        width: 390px;
+        height: 500px; } }
+  .diary__image {
+    margin: 0;
+    object-fit: cover; }
+  .diary__image-card {
+    position: absolute;
+    top: 70%;
+    left: -10%;
+    object-fit: cover; }
 
 /*# sourceMappingURL=styles.css.map */

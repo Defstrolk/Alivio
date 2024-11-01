@@ -6,8 +6,16 @@
 		align-items: center;
 	}
 
+	@include mobile{
+		height: 600px;
+	}
+	@include tablet{
+		height: 600px;
+	}
+
 	display: flex;
 	column-gap: 16px;
+	height: 922px;
 
 
 	&__body {
@@ -21,6 +29,7 @@
 			padding-top: 220px;
 		}
 		@include tablet{
+			padding-top: 160px;
 			font-size: 32px;
 		}
 		@include mobile{
@@ -63,14 +72,17 @@
 	&__video {
 		@include desktop{
 			width: 600px;
+			height: 250px;
 		}
 		@include tablet{
+			margin-top: 150px;
+			margin-bottom: 150px;
 			width: 400px;
 		}
 		@include mobile{
 			width: 400px;
-			padding-top: 50px;
-			padding-bottom: 50px;
+			margin-top: 50px;
+			margin-bottom: 50px;
 		}
 
 		@include mobile-s{
@@ -78,8 +90,8 @@
 		}
 
 		anchor-name: --video;
-		padding-top: 220px;
-		padding-bottom: 227px;
+		margin-top: 220px;
+		margin-bottom: 227px;
 		position: relative;
 		display: block;
 		

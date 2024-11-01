@@ -1,0 +1,83 @@
+.diary {
+	@include tablet{
+		column-gap: 30px;
+	}
+	@include mobile{
+		display: flex;
+		flex-direction: column;
+	}
+
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	height: 931px;
+	column-gap: 87px;
+
+
+
+	&__main {
+		@include mobile{
+			order: -1;
+			align-items: center;
+			margin-top: 50px;
+		}
+
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		align-items: start;
+		margin-top: 115px;
+	}
+
+	&__subtitle {
+		margin-bottom: 10px;
+		font-size: 25px;
+		font-weight: 600;
+		line-height: 157%;
+	}
+
+	&__title {
+		@include mobile{
+			font-size: 30px;
+		}
+
+		margin-bottom: 20px;
+		color: var(--color-green);
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 157%;
+	}
+
+	&__description {
+		margin-bottom: 40px;
+		max-width: 530px;
+	}
+
+	&__image-inner {
+		@include mobile{
+			margin-block: 30px;
+			width: 390px;
+			height: 500px;
+		}
+
+		display: flex;
+		justify-content: center;
+		margin-top: 115px;
+		width: 638px;
+		height: 573px;
+		background-color: var(--color-green-light);
+		position: relative;
+	}
+
+	&__image{
+		margin: 0;
+		object-fit: cover;
+	}
+
+	&__image-card{
+		position: absolute;
+		top: 70%;
+		left: -10%;
+		object-fit: cover;
+	}
+}
